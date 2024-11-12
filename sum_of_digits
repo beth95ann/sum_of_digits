@@ -1,0 +1,22 @@
+int main()
+{
+int number, addend1, addend2, addend3, tempInt, result;
+double tempFloat;
+
+printf("Enter a three-digit number: ");
+scanf("%d", &number);
+
+addend1 = number*.01;
+addend2 = ((number*.01) - addend1)*10;
+tempFloat = (number*.1);
+tempInt = (int)tempFloat;
+addend3 = (tempFloat - tempInt)*10;
+
+
+result = addend1 + addend2 + addend3;
+
+printf("\n\nThe sum of the digits equals %d\n\n", result);
+
+
+return 0;
+}
